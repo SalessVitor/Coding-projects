@@ -16,8 +16,8 @@ def user_input():
                     user = print(f"Your current number {count}")
                     count +=1                
                 if count >= reset_point:
-                    print("Reseting counting")
-                    count = 0
+                    print(f"Reseting counting {count}")
+                    #count = 0
                     count +=1
                 if user == "n": 
                     break
