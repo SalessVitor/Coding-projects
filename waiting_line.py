@@ -6,7 +6,7 @@
 #killed this class because it makes no sense on this code
 #but i am storing here just in case
 def user_input():
-        
+        reset_point = 3
         count = 0 
         while True:
             #try:
@@ -14,11 +14,12 @@ def user_input():
                 if user == "y":
                     #count in range(0,100)y  
                     user = print(f"Your current number {count}")
-                    count +=1
-                    reset_point = 101
-                elif count >= reset_point:
+                    count +=1                
+                if count >= reset_point:
                     print("Reseting counting")
-                elif user == "n": 
+                    count = 0
+                    count +=1
+                if user == "n": 
                     break
                 else:
                      print("Digite Y ou N")
